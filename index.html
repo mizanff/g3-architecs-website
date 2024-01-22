@@ -7,9 +7,20 @@
     <style>
         /* work sans font form google font */
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+        /* shared styles */
         * {
             font-family: 'Open Sans', sans-serif;
             font-family: 'Work Sans', sans-serif;
+        }
+        .btn-primary{
+            border-radius: 8px;
+            background-color: #FF900E;
+            color: white;
+            font-size: 1.25rem;
+            padding: 20px 25px;
+            color: white;
+            cursor: pointer;
+            border: 0;
         }
         /* header styles */
         header{
@@ -53,9 +64,64 @@
         .banner-description{
             color: #727272;
         }
+        .banner img{
+            width: 100%;
+            margin-top: 20px;
+        }
+        /* Responsiv media querais */
+        /* Mobile devices */
+        @media screen and (max-width: 576px;){
+            header{
+                padding: 20px;
+            }
+            nav{
+                flex-direction: column;
+            }
+        }
+        /* Tablet or medium devices */
+        @media screen and (min-width: 576px;) and (max-width:960px) {
+            header{
+                padding: 50px;           
+        }
+        nav {
+                flex-direction: column;
+            }
+        } 
+        /* main styles  */
+        main{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        /* teams styles */
+        .teams-container{
+            display: flex;
+            align-items: center;
+        }
+        .teams-img-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .teams-content{
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        .teams-title{
+            font-size: 2.8rem;
+        }
+        .teams-title .quick-list{
+            color: #727272;
+            font-size: 500;
+        }
+        .teams-title .text-features{
+            color: #FF900E;
+            font-weight: 700;
+        }
+        
       </style>
 </head>
 <body>
+    <!-- header start -->
     <header>
         <nav>
             <h3 class="nav-title">G3 Architects</h3>
@@ -69,7 +135,7 @@
         </nav>
         <div class="banner">
             <div class="banner-contant">
-                <h1 class="banner-title">Brand New Group Of Architects</h1>
+                <h1 class="teams-title">Brand New Group Of Our Architects</h1>
             <p class="banner-description">here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in 
                 some form, by injected humour, or randomised words which don't look even</p>
             <button class="btn-primary">Explore More</button>
@@ -78,8 +144,26 @@
 
         </div>
     </header>
+    <!-- header end -->
     <main>
+        <!-- features section start -->
+        <section class="teams-container">
+            <div class="teams-img-container">
+                <img src="images/team1.png" alt="">
+                <img src="images/team2.png" alt="">
+                <img src="images/team3.png" alt="">
+                <img src="images/team4.png" alt="">
+            </div>
+            <div class="teams-content">
+                <h3 class="teams-title"><span class="quick-list">Quick list </span><span>of Our </span><span class="text-features">Features</span></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected 
+                    humour, or randomised words which don't look even</p>
+                <button class="btn-primary">Explore More</button>                       
+                    
 
+            </div>
+        </section>
     </main>
     <footer>
 
