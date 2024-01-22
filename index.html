@@ -12,6 +12,9 @@
             font-family: 'Open Sans', sans-serif;
             font-family: 'Work Sans', sans-serif;
         }
+        .text-light-gray{
+            color: #727272;
+        }
         .btn-primary{
             border-radius: 8px;
             background-color: #FF900E;
@@ -61,23 +64,12 @@
             font-weight: 700;
             color: black;
         }
-        .banner-description{
-            color: #727272;
-        }
+        
         .banner img{
             width: 100%;
             margin-top: 20px;
         }
-        /* Responsiv media querais */
-        /* Mobile devices */
-        @media screen and (max-width: 576px;){
-            header{
-                padding: 20px;
-            }
-            nav{
-                flex-direction: column;
-            }
-        }
+        
         /* Tablet or medium devices */
         @media screen and (min-width: 576px;) and (max-width:960px) {
             header{
@@ -90,7 +82,7 @@
         /* main styles  */
         main{
             max-width: 1440px;
-            margin: 0 auto;
+            margin: 70px auto;
         }
         /* teams styles */
         .teams-container{
@@ -117,6 +109,17 @@
             color: #FF900E;
             font-weight: 700;
         }
+
+        /* Responsiv media querais */
+        /* Mobile devices */
+        @media screen and (max-width: 576px;){
+            header{
+                padding: 20px;
+            }
+            nav{
+                flex-direction: column;
+            }
+        }
         
       </style>
 </head>
@@ -136,7 +139,7 @@
         <div class="banner">
             <div class="banner-contant">
                 <h1 class="teams-title">Brand New Group Of Our Architects</h1>
-            <p class="banner-description">here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in 
+            <p class="text-light-gray">here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in 
                 some form, by injected humour, or randomised words which don't look even</p>
             <button class="btn-primary">Explore More</button>
             </div>
@@ -155,7 +158,7 @@
                 <img src="images/team4.png" alt="">
             </div>
             <div class="teams-content">
-                <h3 class="teams-title"><span class="quick-list">Quick list </span><span>of Our </span><span class="text-features">Features</span></h3>
+                <h3 class="teams-title"><span class="quick-list text-light-gray">Quick list </span><span>of Our </span><span class="text-features">Features</span></h3>
                 <p>There are many variations of passages of Lorem Ipsum available, 
                     but the majority have suffered alteration in some form, by injected 
                     humour, or randomised words which don't look even</p>
